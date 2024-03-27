@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title> Password Generator </title>
+</head>
+<body>
+
+    <button class="btn cube cube-hover" type="button">
+        <div class="bg-top">
+          <div class="bg-inner"></div>
+        </div>
+        <div class="bg-right">
+          <div class="bg-inner"></div>
+        </div>
+        <div class="bg">
+          <div class="bg-inner"></div>
+        </div>
+        <div class="text">Password Generator</div>
+      </button>
+      
+
+  <div class="container-input">
+    <span> Number of Characters <span id="valor"></span></span>
+    <input id="slider" class="slider" type="range" min="5" max="25" value="15"/> </div>
+
+    <button class="ui-btn" onclick="generatePassword()">
+        <span>
+          Generate Password
+        </span>
+      </button>
+  <div id="container-password" onclick="copyPassword()" class="container-password hide">
+    <span class="title">Your Password!</span>
+    <span id="password"  class="password"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
